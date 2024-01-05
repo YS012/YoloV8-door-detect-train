@@ -38,7 +38,7 @@ image_width = 1920
 image_height = 1080
 
 # 更改为您的文件夹路径
-folder_path = 'D:\\Python\\yolov8_demo\\datasets\\my_pos\\labels\\train'
+folder_path = '/datasets/my_pos/labels/data_test processing'
 
 # 获取文件夹中的所有 TXT 文件
 txt_files = [os.path.join(folder_path, file) for file in os.listdir(folder_path) if file.endswith('.txt')]

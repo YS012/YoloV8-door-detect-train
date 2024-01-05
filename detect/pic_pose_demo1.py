@@ -3,7 +3,7 @@ import supervision as sv
 import cv2
 from ultralytics import YOLO
 
-model = YOLO('yolov8n-pose.pt')  # load an official model
+model = YOLO('../weights/yolov8n-pose.pt')  # load an official model
 
 img = cv2.imread('1.png')
 # Predict with the model
@@ -23,9 +23,3 @@ annotated_image = label_annotator.annotate(scene=img, detections=detections, lab
 sv.plot_image(annotated_image)
 
 
-# # View results
-#
-# im_array = results[0].plot()  # plot a BGR numpy array of predictions
-# im = Image.fromarray(im_array[..., ::-1])  # RGB PIL image
-# im.show()  # show image
-# im.save('results.jpg')  # save image

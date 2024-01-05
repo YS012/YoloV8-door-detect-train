@@ -1,7 +1,7 @@
 import json
 
 # 读取 JSON 文件
-with open('person_keypoints_default.json', 'r') as json_file:
+with open('../person_keypoints_default.json', 'r') as json_file:
     data = json.load(json_file)
 
 # 遍历 images

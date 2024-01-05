@@ -1,5 +1,5 @@
 task: detect
-mode: train
+mode: data_test processing
 model: yolov8n.pt
 data: test.yaml
 epochs: 10
@@ -13,7 +13,7 @@ cache: false
 device: null
 workers: 8
 project: null
-name: train
+name: data_test processing
 exist_ok: false
 pretrained: true
 optimizer: auto

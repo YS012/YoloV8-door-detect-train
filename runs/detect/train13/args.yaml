@@ -1,5 +1,5 @@
 task: detect
-mode: train
+mode: data_test processing
 model: yolov8n.pt
 data: test.yaml
 epochs: 10
